@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Parser</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .box {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        pre {
+            background: #111;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>📄 AI Resume Parser</h2>
+
+    <!-- Upload Form -->
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume" required>
+        <br><br>
+        <button type="submit">Upload Resume</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+
+        <hr>
+
+        <h3>🔍 Extracted Information</h3>
+
+        <div class="box"><b>Name:</b> {{ result.name }}</div>
+        <div class="box"><b>Email:</b> {{ result.email }}</div>
+        <div class="box"><b>Phone:</b> {{ result.phone }}</div>
+        <div class="box"><b>Skills:</b> {{ result.skills }}</div>
+
+        <hr>
+
+        <h3>📜 Resume Text</h3>
+
+        <pre>{{ result.text }}</pre>
+
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
