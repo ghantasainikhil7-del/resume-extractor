@@ -1,0 +1,10 @@
+flask
+PyMuPDF
+pytesseract
+opencv-python
+numpy
+pillow
+pandas
+tqdm
+spacy
+gunicorn

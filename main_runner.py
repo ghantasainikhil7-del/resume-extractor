@@ -44,6 +44,8 @@ def main():
 
     df = pd.DataFrame(data, columns=["Name","Email","Phone","Skills"])
 
+    import os
+    os.makedirs("output", exist_ok=True)
     df.to_csv("output/resume_data.csv", index=False)
 
     print("Extraction completed")
