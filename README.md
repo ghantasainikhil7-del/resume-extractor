@@ -1,11 +1,34 @@
 # Resume Intelligence — Enterprise Document Parsing & ATS Scoring Engine
 
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://resume-intelligence-1f1t.onrender.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ghantasainikhil7-del/resume-extractor)
+[![Python Version](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+### 🌐 **Live Web Application**: [https://resume-intelligence-1f1t.onrender.com](https://resume-intelligence-1f1t.onrender.com)
+
+</div>
+
+---
+
+## 🖥️ Live Demo Preview
+
+<div align="center">
+  <img src="assets/demo_screenshot.png" alt="Resume Intelligence ATS Readiness & Candidate Dossier Dashboard" width="900" style="border-radius: 12px; border: 1px solid #E6E8EC; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" />
+  <p><em>Real-time ATS Readiness Scorecard, 5-Pillar Diagnostics, Verified Strengths & Enterprise Compliance Checklist.</em></p>
+</div>
+
+---
+
 A production-grade, privacy-first resume intelligence platform that ingests unstructured resumes (PDF, images, and text), executes optical and vector extraction, performs spaCy Named Entity Recognition (NER), benchmarks competencies against a comprehensive 40+ skill taxonomy, and generates multi-pillar ATS scorecards, role alignment matrices, and candidate-tailored screening questions.
 
 ---
 
 ## 📑 Table of Contents
 
+- [Live Demo Preview](#-live-demo-preview)
 - [Executive Summary](#-executive-summary)
 - [System Architecture & Processing Pipeline](#-system-architecture--processing-pipeline)
 - [5-Pillar ATS Readiness Index & Diagnostics](#-5-pillar-ats-readiness-index--diagnostics)
